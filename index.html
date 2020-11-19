@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>德勝集團</title>
+    <link href="js/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap-col10.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/base_rwd.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_rwd.css" rel="stylesheet">
+    <link href="js/tablesaw-master/dist/tablesaw.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" src="js/tablesaw-master/dist/tablesaw.js"></script>
+    <script type="text/javascript" src="js/tablesaw-master/dist/tablesaw-init.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>   
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-3.2.0-distjs/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //check ie
+            if ($.browser.msie && $.browser.version <= "8.0") {
+                $('body').addClass('is_oldie');
+                // please upgrade your browser
+            }
+            if (Modernizr.touch) {
+                $("body").addClass("is_touch");
+            }
+
+            //for editor
+            $(".editor table.scroll").wrap("<div class='table-responsive'></div>");
+
+            $(".editor iframe[src*='youtube']").each(function (e) {
+                if (!$(this).hasClass("embed-responsive-item")) {
+                    var w = ($(this).attr("width")) ? $(this).attr("width") : "",
+                        u = (w && w.search(/px|%/) == -1) ? "px" : "";
+                    $(this)
+                        .removeAttr("height")
+                        .removeAttr("width")
+                        .addClass("embed-responsive-item")
+                        .attr("allowfullscreen", "1")
+                        .wrap("<div class='youtube_wrap' style='max-width:" + w + u + ";margin:auto;'><div class='embed-responsive embed-responsive-16by9' style='width:100%;'></div></div>");
+                }
+            });
+
+            $(window).scroll(function (e) {
+                var win_h = $(window).scrollTop();
+                var win_w = $(window).width();
+
+                // 視窗捲動超過.header時，#floating 增加.fixed
+                var page_w = $(".main_content > .container").width();
+                var floating_offset_top = $(".header").height() + $(".main_top").height();
+                if (win_h > floating_offset_top) {
+                    $("#floating").addClass("fixed");
+                } else {
+                    $("#floating").removeClass("fixed");
+                }
+                (win_h > 10) ? $("body").addClass("is_scroll") : $("body").removeClass("is_scroll");
+
+            });
+
+            $('.btn-floating').click(function (e) {
+                e.preventDefault();
+                $('#floating').toggleClass("open");
+            });
+
+            //側選單的開合按鈕
+            $('.side-toggle').click(function (e) {
+                e.preventDefault();
+                $('.side1').toggleClass("menu-open");
+            });
+            //gotop Animate
+            $(".gotop a[href=#]").click(function (e) {
+                $("html,body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+            $(".navbar-toggle").click(function(){
+                $(".navbar-collapse").slideToggle(500);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){        
+      });
+    </script>
+    <script type="text/javascript" src="js/selectivizr-1.0.2/selectivizr-min.js"></script>
+    <script type="text/javascript" src="js/html5shiv-3.7.2.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">    <!-- InstanceParam name="body_class" type="text" value="home" -->
+</head>
+
+<body id="PageBody" class="home">
+  <div class="page_wrapper">
+    <div class="header">
+      <div class="wrp-deco top"></div>
+      <div class="header_top"></div>
+      <!-- ↓導覽列↓ -->
+      <div class="navbar" role="navigation">
+        <!--include:nav-->
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div><!-- /.navbar-header -->
+          <link type="text/css" href="css/yamm3/yamm/yamm.css" rel="stylesheet">
+          <div class="navbar-collapse yamm collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">走進德勝</a></li>
+              <li><a href="#">德勝願景</a></li>
+              <li><a href="#">光輝歷程</a></li>
+              <li><a href="#">集團產業</a></li>
+              <li><a href="#">新聞中心</a></li>
+              <li><a href="#">合作夥伴</a></li>
+              <li><a href="#">招聘中心</a></li>
+              <li><a href="#">聯繫我們</a></li>
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+      </div><!-- /.navbar -->
+      <!-- ↑導覽列↑ -->
+
+      <!-- ↓Banner↓ -->
+      <div class="banner" id="banner">
+        <script type="text/javascript" src="js/bxslider-4-master/jquery.bxslider.min.js"></script>
+        <link href="js/bxslider-4-master/jquery.bxslider.min.css" rel="stylesheet">
+        <script>
+          $(document).ready(function () {
+            $('.banner .bxslider').bxSlider({
+              mode: 'horizontal',  //切換的模式：'horizontal'(左右切換), 'vertical'(上下切換), 'fade'(淡入淡出)
+              speed: 4000, //切換的速度
+              auto: true,  //是否自動播放
+              pause: 3000,  //每張圖停留的時間
+              controls: true,
+              pager: true
+            });
+          });
+        </script>
+        <style>
+          .banner .bxslider li {
+            height: 668px;
+          }
+        </style>
+        <div class="container-fluid">
+          <div class="wrp_frame border-LT"></div>
+          <div class="wrp_frame border-CT"></div>
+          <div class="wrp_frame border-RT"></div>
+          <div class="wrp_frame border-LM"></div>
+          <div class="wrp_frame border-RM"></div>
+          <div class="wrp_frame border-LB"></div>
+          <div class="wrp_frame border-CB"></div>
+          <div class="wrp_frame border-RB"></div>
+          <div class="bx-wrapper">
+            <div class="bx-viewport">
+              <ul class="bxslider">
+                <li style="background-image: url(images/_banners/banner_home05.jpg);">
+                  <a href="#"><img src="images/_banners/banner_home01m.jpg" alt=""></a>
+                </li>
+                <li style="background-image: url(images/_banners/banner_home01.jpg);">
+                  <a href="#"><img src="images/_banners/banner_home02m.jpg" alt=""></a>
+                </li>
+                <li style="background-image: url(images/_banners/banner_home02.jpg);">
+                  <a href="#"><img src="images/_banners/banner_home03m.jpg" alt=""></a>
+                </li>
+                <li style="background-image: url(images/_banners/banner_home03.jpg);">
+                  <a href="#"><img src="images/_banners/banner_home04m.jpg" alt=""></a>
+                </li>
+                <li style="background-image: url(images/_banners/banner_home04.jpg);">
+                  <a href="#"><img src="images/_banners/banner_home05m.jpg" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ↑Banner↑ -->
+      <div class="header_ex"></div>
+      <div class="wrp-deco bottom"></div>
+    </div>
+    <!-- /.header -->
+    
+    <div class="main">
+      <div class="main_top"></div><!-- /.main_top -->
+      <div class="main_content">
+        <div class="container">
+          <div class="row">
+            <div id="side1" class="side side1 hidden">
+              <div class="wrp-deco top"></div>
+              <div class="wrp-deco bottom"></div>                    
+            </div><!-- /.side1 -->
+            <div id="content" class="content col-sm-12">
+              <div class="brand_home">
+                <h2>旗下產業<span>Industry</span></h2>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="iten"><a class="b01" href="#" target="_blank"><img class="img-responsive" src="images/all/brand01.png" alt=""></a></div>                               
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="iten"><a class="b02" href="#" target="_blank"><img class="img-responsive" src="images/all/brand02.png" alt=""></a></div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="iten"><a class="b03" href="#" target="_blank"><img class="img-responsive" src="images/all/brand03.png" alt=""></a></div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="iten"><a class="b04" href="#" target="_blank"><img class="img-responsive" src="images/all/brand04.png" alt=""></a></div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="iten"><a class="b05" href="#" target="_blank"><img class="img-responsive" src="images/all/brand05.png" alt=""></a></div>
+                  </div>
+                </div>
+              </div>
+              <div id="hotNewsDiv" class="wid wid-home-news">
+                <h2>合作廠商<span>Vendor</span></h2>
+                <div class="bx-wrapper">
+                  <div class="bx-viewport">
+                    <ul class="bxslider list-inline">
+                      <li>
+                        <div class="row wrapfix">
+                          <a href="#"> 
+                            <div class="col-md-12"><img class="img-responsive center-block" src="upload/Vendor/AGLogo.jpg"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row wrapfix">
+                          <a href="#"> 
+                            <div class="col-md-12"><img class="img-responsive center-block" src="upload/Vendor/DeluxeGOLD-Logo.jpg"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row wrapfix">
+                          <a href="#"> 
+                            <div class="col-md-12"><img class="img-responsive center-block" src="upload/Vendor/BBLogo.jpg"></div>
+                          </a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row wrapfix">
+                          <a href="#">
+                            <div class="col-md-12"><img class="img-responsive center-block" src="upload/Vendor/JelyLogo.jpg"></div>
+                          </a>
+                        </div>
+                      </li>    
+                      <li>
+                        <div class="row wrapfix">
+                          <a href="#">
+                            <div class="col-md-12"><img class="img-responsive center-block" src="upload/Vendor/WisbetLogo.jpg"></div>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div>
+                </div>
+                <script>
+                  // 圖片輪播
+                  $(document).ready(function() {
+                    if ($(document).width() > 767) {
+                      $('.wid-home-news .bxslider').bxSlider({
+                        slideWidth: 5000,
+                        minSlides: 2,
+                        maxSlides: 2,
+                        slideMargin: 10,
+                        moveSlides: 1,
+                        controls: true,
+                        pager: false,
+                        auto: false,
+                        infiniteLoop: false
+                      });
+                    } else {
+                      $('.wid-home-news .bxslider').bxSlider({
+                        minSlides: 1,
+                        maxSlides: 1,
+                        slideMargin: 10,
+                        auto: true,
+                        moveSlides: 1,
+                        controls: true,
+                        pager: false,
+                      });
+                    }
+                  }); 
+                </script>
+                <!-- /.wid-home-product -->
+              </div>
+              
+              <!-- InstanceEndEditable -->
+            </div><!-- /.content -->
+            <div id="side2" class="side side2 hidden">
+              <div class="wrp-deco top"></div>
+              <div class="wrp-deco bottom"></div>
+            </div><!-- /.side2 -->
+          </div><!-- /.row -->
+          <div class="clearfix"><!--計算.main的背景高度用--></div>
+        </div><!-- /.container -->
+      </div><!-- /.main_content -->
+      <div class="main_ex"></div><!-- /.main_ex -->
+    </div><!-- /.main -->
+    
+    <div class="footer">
+      <div class="footer_content">
+        <div class="container">
+          <div class="row">
+            <div class="editor col-md-7">
+              <div class="row atouch">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <a href="#"><h4>走進德勝</h4></a>
+                  <a href="#"><h4 class="cont">合作夥伴</h4></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <a href="#"><h4>德勝願景</h4></a>
+                  <a href="#"><h4 class="cont">招聘中心</h4></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <a href="#"><h4>光輝歷程</h4></a>
+                  <a href="#"><h4 class="cont">聯繫我們</h4></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <a href="#"><h4>集團產業</h4></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <a href="#"><h4>新聞中心</h4></a>
+                </div>              
+              </div>           
+            </div><!-- /.editor -->
+
+            <div class="editor col-md-1"><div class="separated"></div></div>
+            <div class="col-md-4">
+              <div class="wid wid-home-contact ">
+                <img class="img-responsive footer_logo" src="images/all/footer_logo.png" alt="">
+                <ul class="list-inline fb">
+                  <li class="hidden"><a href="#"><img class="img-responsive" src="images/all/footer_fb.png" alt=""></a></li>
+                  <li><a href="#"><img class="img-responsive" src="images/all/footer_cot.png" alt=""></a></li>
+                </ul><!-- /.contact-info -->
+                <ul class="nav Infor">
+                  <li>Add&nbsp;&nbsp;&nbsp;&nbsp;<span class="intermediate"> / </span>台北市內湖區瑞光路258巷2號8樓之4</li>
+                  <li class="phone">Tel&nbsp;&nbsp;&nbsp;&nbsp;<span class="intermediate"> / </span>(02) 2656-1366</li>
+                  <li>E-mail<span class="intermediate"> / </span>Service@des-tw.com</li>
+                </ul><!-- /.contact-info -->
+              </div><!-- /.wid-home-contact -->
+            </div>
+          </div>
+        </div><!-- /.container -->
+        <div class="container"><div class="gotop"><a href="#"><img class="img-responsive" src="images/all/footer_top.jpg" alt=""></a></div></div><!-- /.container -->
+        <div class="container-fluid">
+          <div class="eztr">
+            <div class="container">
+              <div class="copyright">Copyright © 2018 Desheng&nbsp;&nbsp;&nbsp;&nbsp;Group Inc.All rights reserved</div><!-- /.copyright --> 
+            </div><!-- /.container -->
+          </div><!-- /.container-fluid -->
+        </div> <!-- /.eztr -->
+      </div><!-- /.footer_content -->
+    </div><!-- /.footer -->
+  </div><!-- /.page_wrapper -->
+</body>
+</html>

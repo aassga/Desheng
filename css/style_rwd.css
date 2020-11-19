@@ -1,0 +1,571 @@
+@charset "utf-8";
+/* 設計師用 RWD版CSS檔 style_rwd.css */
+/* 說明：
+    可提供設計師在此檔，針對RWD版面進行設計；非RWD版面則不需載此CSS檔。*/
+
+
+@media (max-width: 1199px) {
+.p06 .registered .f4 {
+    width: 100%;
+    margin-top: 15px;
+}
+style.css:1149
+.p02 .registered .f4	
+.p02 .registered .f4 {
+    width: 100%;
+    margin-top: 15px;
+}	
+body.about .content .history {
+    display: none;
+}	
+.banner .banner_img {
+    height: auto;
+}
+.banner .banner_img img {
+    display: block;
+    width: 100%;
+}	
+body.home .wid-home-news h2:before {
+    left: 12%;
+    width: 88%;
+}	
+body.home .content .brand_home a:hover:before {
+  
+}	
+    .header .banner .bxslider li {
+        height: auto;
+    }
+
+    .header .banner .bxslider li img {
+        display: block;
+    }
+
+    .header .navbar .navbar-nav {
+        margin-top: 0px;
+        clear: both;
+        float: none;
+        text-align: center;
+    }
+
+    .header .navbar .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+
+    .header .navbar .navbar-header {
+        float: none;
+    }
+
+    .header .navbar .navbar-brand {
+        float: none;
+        margin: 23px auto 15px;
+    }
+
+    #floating {
+        margin-top: -90px;
+    }
+}
+
+@media (max-width: 991px) {
+	body.home .content .brand_home .b04, body.home .content .brand_home .b05, body.home .content .brand_home .b06 {
+    margin-top: 0px;
+}
+.member .log_in .rights {
+    padding: 45px 15px;
+
+}	
+.content .list-box .txt-list li span {
+    margin-right: 0;
+    display: table;
+    line-height: 2;
+}
+.content .list-box .txt-list li a {
+    line-height: 4;
+}	
+.side .side-toggle {
+    border-bottom: 1px solid #6d6d6d;
+}	
+body.about .content .div1 {
+    margin-bottom: 21px;
+}	
+body.about .content .color1, body.about .content .color2 {
+    margin-bottom: 6px;
+    display: block;
+	    font-size: 20px;
+}	
+.side .sider_nav {
+    padding: 1px 20px 6px;
+    text-align: center;
+}	
+body.about .content .history {
+	display:none;
+}	
+.footer .wid-home-contact .footer_logo {
+	float:left;
+}	
+.footer .fb {
+	float: left;
+    margin-left: 135px;
+    margin-top: 13px;
+}
+.footer .wid-home-contact .Infor {
+    float: right;
+}
+.footer 	.wid-home-contact {
+	margin-top:50px;
+	}	
+body.home .wid-home-news h2:before,
+body.home    .brand_home  h2:before {
+    left: 15%;;
+    width: 87%;
+}	
+.footer .separated {
+    height:inherit;
+    background:none;
+}	
+body.home .wid-home-news .bx-controls-direction .bx-prev,
+body.home   .wid-home-news   .bx-controls-direction .bx-next {
+    top: 30px;
+}	
+body.home .content .brand_home a {
+    margin-bottom: 45px;
+}	
+    .header .navbar .navbar-nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .content .btn-more {
+        top: 12px;
+    }
+
+    .side {
+        padding-bottom: 20px;
+    }
+
+    .side .nav {
+        max-width: none;
+        margin: 0;
+ 
+    }
+
+    .side.menu-open .nav {
+        display: block;
+    }
+
+    .side .nav > li {
+        float: none;
+        display: inline-block;
+        border: 0;
+        margin: 0 5px;
+        vertical-align: top;
+    }
+
+    .side .nav > li + li {
+        border: 0;
+    }
+}
+
+@media (max-width: 767px) {
+.p02 .cost  table  .blue{
+	    background: #2D66A3;
+		    color: #fff;
+	}
+.p02 .cost  table  tr td {
+	text-align:left;
+	}	
+.content .wid-home-news {
+    padding-bottom: 0;
+}	
+body.home .content .brand_home {
+    padding: 45px 0;
+}	
+body.home   .wid-home-news   .bx-controls-direction .bx-next{
+	left:88%;
+  top: 42px;
+  z-index: 999;
+	}
+body.home   .wid-home-news   .bx-controls-direction .bx-prev{
+  top: 42px;
+  z-index: 999;
+	}
+.p06 .step {
+    display: none;
+}	
+.header .navbar .navbar-nav > li ul li a {
+    text-align: center;
+}	
+.p06 .registered  	.gender{
+	    margin-top: 19px;
+	}
+.p06 .registered .f5 {
+    width: 30%;
+    display: initial;
+}	
+.p06 .registered .solid_bg,
+.p06 .registered .solid_bg02 {
+    margin: 30px auto 30px;
+}	
+.p06 .registered .terms .enter {
+    display: block;
+}	
+.p06 .registered .terms {
+    margin-left: 0;
+}	
+.p06 .registered .confirm {
+    margin-left: 0;
+    margin-top: 18px;
+}
+	
+.p06 .registered .btn-form .btn-style {
+    width: 42%;
+}	
+.p06 .registered .f3 {
+    width: 100%;
+	margin-bottom:14px;
+}
+.p06 .registered {
+    padding: 20px;
+}	
+.p05 .registered .confirm {
+    margin-top: 30px;
+}	
+.p05 .registered    table   .tablesaw-cell-content    input{
+	    margin-top: 6px;
+	}	
+.p05 .registered   .btn-form   .blue {
+    width: 40%;
+
+}	
+.p05 .registered   .btn-form    .gray02 {
+    width: 30%;
+
+}	
+
+.p04  .container   .registered   .btn-form   .btn-style {
+    width: 100%;
+    margin: 10px 0;
+}
+.p02 .registered .ri3 {
+    padding-right: 10px;
+    float: left;
+    margin-left: -11px;
+ 
+}	
+.p02 .registered  .btn-form .btn-style {
+    width: 42%;
+}	
+.p02 .registered  .confirm {
+    margin-left: 0;
+	 margin-top: 18px;
+}
+.p02 .registered {
+    padding: 20px;
+}	
+.p02 .registered .f3{
+    width: 100%;
+	margin-bottom:15px;
+}	
+.p02 .registered .f5{
+   width: 30%;
+    display: initial;
+
+}	
+.p01 .registered .product_bg table td {
+    text-align: inherit;
+
+}	
+.p01 .registered .product_bg table .blue {
+    background-color: #2d66a3;
+	color:#fff;
+}	
+.qa .q_a .panel-default>.panel-heading {
+    margin: 15px 0;
+}	
+.qa .q_a .question {
+    display: block;
+}	
+.p02 .av_conter {
+    padding: 20px;
+}	
+.p02 .av_conter .confirm {
+     margin-left:0;
+
+}	
+.p02 .av_conter .btn-form .btn-style {
+    width: 42%;
+
+}
+.news_show .content h4 {
+    line-height: 27px;
+}	
+.news_show .content h4 span {
+    padding: 0;
+    letter-spacing: 2px;
+    float: none;
+    color: #a1a1a1;
+}	
+.content .list-box .txt-list li a {
+    line-height: 2;
+    margin-bottom: 15px;
+}	
+.main_content .content {
+    padding-left: 15px;
+}	
+.side .sider_nav {
+    padding: 4% 20px 0;
+
+}	
+.side .sider_nav h2 {
+    text-align: center;
+}	
+body.about .content  	.history{
+	margin-bottom:30px;
+		display:block;
+	}
+body.about .content .div1 {
+    margin-bottom:22px;
+}
+body.about .content .color1,body.about .content .color2 {
+    margin-bottom: 6px;
+    display: block;
+}	
+body.home .wid-home-news .wrapfix .ndate {
+    margin-top: 26px;
+}	
+.footer .wid-home-contact .footer_logo {
+	float:none;
+}	
+.footer .fb {
+    float:none;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.footer .wid-home-contact .Infor {
+    	float:none;
+		 margin-left: 7px;
+}	
+body.home .wid-home-news .bx-controls-direction .bx-prev, body.home .wid-home-news .bx-controls-direction .bx-next {
+}	
+.header .navbar .navbar-nav li a:hover {
+       background-color: #023894;
+    color: #fff;
+}
+.navbar-toggle .icon-bar {
+    background-color: #7f7f7f;
+}
+.header .navbar .navbar-brand {
+    float: left;
+    background-size: 80%;
+    margin-left: 9px;
+
+ 
+}	
+body.home .wid-home-news h2:before, 
+body.home    .brand_home  h2:before{	
+ left: 29%;
+    width: 67%;
+}	
+.footer .powered {
+    text-align: center;
+}	
+.footer .wid-home-contact .footer_logo {
+    margin-top: 22px;
+}	
+.footer .cont {
+    margin-top: 65px;
+}	
+.wid-home-news  ul{
+}	
+.wid-home-news  ul li{
+
+    display: block;
+}	
+.wid-home-news  ul li a{
+	display:block;
+}
+    #floating,
+    #floating.fixed {
+        top: 40px;
+        margin-top: 0;
+    }
+
+    #floating .btn-floating {
+        display: block;
+    }
+
+    #floating ul {
+        width: 0;
+        overflow: hidden;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    #floating.open ul {
+        width: 60px;
+    }
+
+    .header .navbar .navbar-header {
+        text-align: center;
+    }
+
+.header .navbar .navbar-toggle {
+    right: -13px;
+	    position: absolute;
+    right: 15px;
+    top: 20px;
+    margin: 0;
+	 border-color:: #7f7f7f;;
+}
+
+    .header .navbar .navbar-toggle:hover {
+        background: none;
+        color: #888;
+    }
+
+    .header .navbar .navbar-nav {
+        background: none;
+        border-top: 2px solid #023894;
+        margin: 0 -15px;
+    }
+
+    .header .navbar .navbar-nav > li {
+        display: block;
+    }
+
+    .header .navbar .navbar-nav > li + li:before {
+        display: none;
+    }
+
+    .header .navbar .navbar-nav > li > a {
+        width: auto;
+        text-align: center;
+       border-bottom: 1px solid #c7c7c7;
+        padding: 10px;
+    }
+
+    .header .navbar .sub-nav {
+        text-align: center;
+        margin: 10px 0 20px;
+        position: static;
+    }
+
+    .header .navbar .btn-default {
+        color: #333;
+    }
+
+    .header .navbar .lang {
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        position: static;
+		display:none;
+    }
+
+    .header .navbar .lang .btn {
+        width: 100%;
+        background: none;
+        font-size: 14px;
+        border: none;
+        float: none;
+        display: block;
+        padding: 8px;
+    }
+
+    .header .navbar .lang .btn,
+    .header .navbar .lang .btn:active .header .navbar .lang .btn:focus {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .header .navbar .lang .dropdown-menu {
+        text-align: center;
+        box-shadow: none;
+        float: none;
+        position: static;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer .sitemap {
+        display: none;
+    }
+
+    .footer .copyright,
+    .footer .siteinfo,
+    .footer .siteinfo ul {
+        display: block;
+    }
+
+    .footer .siteinfo ul > li {
+        display: block;
+    }
+
+    .footer .siteinfo ul > li + li:before {
+        display: none;
+    }
+
+    .main {
+        z-index: auto;
+    }
+
+    .side .nav {
+        margin-bottom: 20px;
+    }
+
+    .side .nav > li {
+        float: none;
+        display: block;
+        margin: 0;
+    }
+
+    .side .nav > li + li {
+          border-top: 1px solid #949494;
+    }
+
+    .content .list-box .txt-list li.list-header {
+        display: none;
+    }
+
+    .content .list-box .txt-list li span {
+        float: none;
+        display: block;
+		    margin-bottom: 13px;
+  
+    }
+
+    .content .btn-box {
+        text-align: center;
+    }
+
+    .content .btn-box .page-info select {
+        width: 100px;
+        display: inline-block;
+    }
+
+    .content .btn-box .pager,
+    .content .btn-box .page-info {
+        float: none;
+    }
+
+    .content .btn-box .pager {
+        display: block;
+    }
+
+    .content .btn-box .pager li {
+        margin: 0;
+    }
+
+    .content .btn-box .pager li > a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
